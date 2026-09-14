@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farimah Nourpanah</title>
+<meta name="description" content="Farimah Nourpanah — Computer Science student. Databases, systems, and small experiments in code.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #202124;
+    --text-secondary: #5f6368;
+    --link: #1a5cb0;
+    --border: #e3e3e3;
+    --chip-bg: #f4f4f5;
+    --award: #a3660f;
+    --max: 760px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 56px 24px 90px;
+  }
+
+  .header {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    flex: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #eef1f4;
+    border: 1px solid var(--border);
+  }
+
+  .who h1 {
+    font-size: 27px;
+    font-weight: 700;
+    margin: 4px 0 6px;
+    color: var(--text);
+  }
+
+  .who .title {
+    color: #3c4043;
+    font-size: 16px;
+    margin: 0 0 4px;
+  }
+
+  .who .loc {
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    margin: 0 0 12px;
+  }
+
+  .icons { display: flex; gap: 14px; }
+  .icons a { display: inline-flex; color: #3c4043; }
+  .icons svg { width: 20px; height: 20px; }
+  .icons a:hover { color: var(--link); text-decoration: none; }
+
+  @media (max-width: 480px) {
+    .header { gap: 18px; }
+    .avatar { width: 84px; height: 84px; font-size: 24px; }
+    .who h1 { font-size: 22px; }
+  }
+
+  nav.tabs {
+    display: flex;
+    gap: 26px;
+    margin: 34px 0 30px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 14px;
+  }
+  nav.tabs a { color: var(--text); font-size: 15px; font-weight: 500; }
+  nav.tabs a:hover { color: var(--link); text-decoration: none; border-bottom: 2px solid var(--link); }
+
+  .bio p { margin: 0 0 16px; color: var(--text); }
+
+  h2.section {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 48px 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .entry {
+    display: flex;
+    gap: 20px;
+    padding: 22px 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .entry:last-child { border-bottom: none; }
+
+  .thumb {
+    flex: none;
+    width: 92px;
+    height: 92px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .thumb svg { width: 46px; height: 46px; }
+
+  .entry-body { flex: 1; min-width: 0; }
+
+  .entry-title { font-weight: 700; font-size: 16.5px; color: var(--text); margin: 0 0 5px; }
+  .entry-title a { color: var(--text); }
+  .entry-title a:hover { text-decoration: underline; }
+
+  .entry-stack { font-size: 14px; color: var(--text); margin: 0 0 3px; }
+  .entry-venue { font-style: italic; color: var(--text-secondary); font-size: 14px; margin: 0 0 8px; }
+  .entry-desc { font-size: 14.5px; color: #3c4043; margin: 0 0 6px; max-width: 56ch; }
+
+  .award {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--award);
+    font-size: 13.5px;
+    margin-top: 2px;
+  }
+  .award svg { width: 14px; height: 14px; fill: var(--award); }
+
+  @media (max-width: 480px) {
+    .thumb { width: 64px; height: 64px; }
+    .thumb svg { width: 32px; height: 32px; }
+  }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0; }
+  .chips li {
+    background: var(--chip-bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  #contact p { color: var(--text); margin: 0 0 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <img class="avatar" src="photo.jpg" alt="Farimah Nourpanah">
+    <div class="who">
+      <h1>Farimah Nourpanah</h1>
+      <p class="title">Computer Science student</p>
+      <p class="loc">Tehran, Iran</p>
+      <div class="icons">
+        <a href="https://github.com/Farimah84" aria-label="GitHub">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/farimah-nourpanah" aria-label="LinkedIn">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13ZM4.94 6.5H2.42V13h2.52V6.5ZM3.68 5.4a1.46 1.46 0 1 0 0-2.92 1.46 1.46 0 0 0 0 2.92ZM13.58 13h.003v-3.57c0-1.75-.378-3.1-2.42-3.1-.98 0-1.64.54-1.91 1.05h-.03V6.5H6.83c.03.67 0 6.5 0 6.5h2.52V9.86c0-.18.01-.36.07-.49.15-.36.5-.74 1.08-.74.76 0 1.06.58 1.06 1.43V13h2.02Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="tabs">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="bio">
+    <p>Hello! I'm a Computer Science student based in Tehran. I like building complete, working systems rather than isolated snippets — a relational database, a rule engine, a small operating-system exercise — and understanding what's actually happening underneath each one.</p>
+    <p>This page is a running record of what I've built so far. If you're working on something similar, I'd love to hear about it.</p>
+  </div>
+
+  <h2 class="section" id="projects">Projects</h2>
+
+  <div class="entry">
+    <div class="thumb" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="1.4">
+        <ellipse cx="12" cy="5" rx="7" ry="2.6"/>
+        <path d="M5 5v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V5"/>
+        <path d="M5 11v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-6"/>
+      </svg>
+    </div>
+    <div class="entry-body">
+      <h3 class="entry-title"><a href="https://github.com/Farimah84/Library-Database">Library Database</a></h3>
+      <p class="entry-stack">T-SQL, relational database design</p>
+      <p class="entry-venue">Personal project</p>
+      <p class="entry-desc">A complete SQL database for library management, modeling members, authors, books, and loans as a working relational system.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="thumb" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="1.4">
+        <circle cx="5" cy="6" r="1.8"/>
+        <circle cx="19" cy="6" r="1.8"/>
+        <circle cx="12" cy="12" r="1.8"/>
+        <circle cx="5" cy="18" r="1.8"/>
+        <circle cx="19" cy="18" r="1.8"/>
+        <path d="M6.6 7.1 10.5 11M17.4 7.1 13.5 11M10.5 13 6.6 16.9M13.5 13l3.9 3.9"/>
+      </svg>
+    </div>
+    <div class="entry-body">
+      <h3 class="entry-title"><a href="https://github.com/Farimah84/Rule-Based-Expert-System-for-Carpet-Problem">Rule-Based Expert System for Carpet Problems</a></h3>
+      <p class="entry-stack">CLIPS, rule-based reasoning</p>
+      <p class="entry-venue">Personal project</p>
+      <p class="entry-desc">Over fifty expert rules that question a user about symptoms, diagnose common carpet problems, and suggest a practical fix.</p>
+      <span class="award">
+        <svg viewBox="0 0 16 16"><path d="M8 .5l2.1 5 5.4.4-4.1 3.6 1.3 5.3L8 11.9l-4.7 2.9 1.3-5.3L.5 5.9l5.4-.4L8 .5z"/></svg>
+        Starred on GitHub
+      </span>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="thumb" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="1.4">
+        <rect x="2.5" y="4" width="19" height="16" rx="1.5"/>
+        <path d="M2.5 8h19"/>
+        <path d="M5.5 12l2.3 2-2.3 2M10 16h4"/>
+      </svg>
+    </div>
+    <div class="entry-body">
+      <h3 class="entry-title"><a href="https://github.com/Farimah84/operating-systems-lab">Operating Systems Lab</a></h3>
+      <p class="entry-stack">Bash, Linux</p>
+      <p class="entry-venue">Coursework, Ubuntu on WSL</p>
+      <p class="entry-desc">Hands-on practice with Linux commands, Bash scripting, user management, and file permissions.</p>
+      <span class="award">
+        <svg viewBox="0 0 16 16"><path d="M8 .5l2.1 5 5.4.4-4.1 3.6 1.3 5.3L8 11.9l-4.7 2.9 1.3-5.3L.5 5.9l5.4-.4L8 .5z"/></svg>
+        Starred on GitHub
+      </span>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="thumb" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="1.4">
+        <rect x="2.5" y="3.5" width="19" height="17" rx="1.5"/>
+        <path d="M2.5 7.5h19"/>
+        <path d="M9 13l-2.3 2 2.3 2M15 13l2.3 2-2.3 2"/>
+      </svg>
+    </div>
+    <div class="entry-body">
+      <h3 class="entry-title"><a href="https://github.com/Farimah84/HTML5-Advanced-Demo">HTML5 Advanced Demo</a></h3>
+      <p class="entry-stack">HTML5, CSS</p>
+      <p class="entry-venue">Personal project</p>
+      <p class="entry-desc">Five advanced HTML5 features in one demo: offline application cache, background web workers, real-time server-sent events, and interactive CSS.</p>
+      <span class="award">
+        <svg viewBox="0 0 16 16"><path d="M8 .5l2.1 5 5.4.4-4.1 3.6 1.3 5.3L8 11.9l-4.7 2.9 1.3-5.3L.5 5.9l5.4-.4L8 .5z"/></svg>
+        Starred on GitHub
+      </span>
+    </div>
+  </div>
+
+  <h2 class="section" id="skills">Skills</h2>
+  <ul class="chips">
+    <li>SQL / T-SQL</li>
+    <li>CLIPS</li>
+    <li>Bash</li>
+    <li>Linux</li>
+    <li>HTML5 / CSS</li>
+    <li>Database design</li>
+  </ul>
+
+  <h2 class="section" id="contact">Contact</h2>
+  <div id="contact">
+    <p>Feel free to reach out through <a href="https://www.linkedin.com/in/farimah-nourpanah">LinkedIn</a> or take a look at more of my work on <a href="https://github.com/Farimah84">GitHub</a>.</p>
+  </div>
+
+</div>
+</body>
+</html>
