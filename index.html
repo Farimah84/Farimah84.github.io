@@ -159,6 +159,24 @@
     font-size: 14px;
     color: var(--text);
   }
+
+  /* ---- Education ---- */
+  .edu-degree { font-weight: 700; font-size: 16.5px; color: var(--text); margin: 0 0 3px; }
+  .edu-dates { font-weight: 400; color: var(--text-secondary); font-size: 14px; margin-left: 8px; }
+  .edu-school { font-size: 14.5px; color: #3c4043; margin: 0 0 8px; }
+  .edu-list { margin: 0; padding-left: 20px; color: var(--text-secondary); font-size: 14px; }
+  .edu-list li { margin-bottom: 4px; }
+
+  /* ---- Experience & Activities ---- */
+  .xp-entry { padding: 16px 0; border-bottom: 1px solid #f1f1f1; }
+  .xp-entry:last-child { border-bottom: none; }
+  .xp-role { font-weight: 700; font-size: 16px; color: var(--text); margin: 0 0 2px; }
+  .xp-org { font-size: 14.5px; color: #3c4043; margin: 0 0 2px; }
+  .xp-dates { font-size: 13.5px; color: var(--text-secondary); margin: 0 0 8px; }
+  .xp-desc { font-size: 14.5px; color: #3c4043; margin: 0; max-width: 64ch; }
+
+  /* ---- Interests ---- */
+  .interests-note { font-size: 14.5px; color: var(--text-secondary); margin: 0 0 14px; max-width: 64ch; }
 </style>
 </head>
 <body>
@@ -182,13 +200,38 @@
   </div>
 
   <nav class="tabs">
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#interests">Interests</a>
   </nav>
 
   <div class="bio">
     <p>Hello! I'm a Computer Engineering student based in Tehran. I like building complete, working systems rather than isolated snippets - a relational database, a rule engine, a small operating-system exercise - and understanding what's actually happening underneath each one.</p>
     <p>This page is a running record of what I've built so far. If you're working on something similar, feel free to reach out!</p>
+  </div>
+
+  <h2 class="section" id="education">Education</h2>
+  <p class="edu-degree">B.Sc. Computer Engineering<span class="edu-dates">October 2023 – present</span></p>
+  <p class="edu-school">Islamic Azad University, Tehran West Branch</p>
+  <ul class="edu-list">
+    <li>GPA: 18.12 / 20</li>
+  </ul>
+
+  <h2 class="section" id="experience">Experience &amp; Activities</h2>
+
+  <div class="xp-entry">
+    <p class="xp-role">AI Intern</p>
+    <p class="xp-org">MEAG startup</p>
+    <p class="xp-dates">Summer 2026 </p>
+    <p class="xp-desc">Hands-on exposure to a real AI workflow at a small startup team.</p>
+  </div>
+
+  <div class="xp-entry">
+    <p class="xp-role">Social Media Manager</p>
+    <p class="xp-org">Computer Engineering Student Association<span class="edu-dates">October 2025 – October 2026</span></p>
+    <p class="xp-desc">Running the association's social media presence for computer engineering students.</p>
   </div>
 
   <h2 class="section" id="projects">Projects</h2>
@@ -227,7 +270,7 @@
 
   <h2 class="section" id="skills">Skills</h2>
   <ul class="chips">
-    <li>Pthon</li>
+    <li>Python</li>
     <li>MySQL / T-SQL / SQLite</li>
     <li>CLIPS</li>
     <li>C / C++</li>
@@ -235,6 +278,13 @@
     <li>Shell</li>
     <li>Bash</li>
     <li>HTML5 / CSS</li>
+  </ul>
+
+  <h2 class="section" id="interests">Interests</h2>
+  <p class="interests-note">Still figuring out where I want to specialize =) right now I'm drawn to:</p>
+  <ul class="chips">
+    <li>Data Science</li>
+    <li>Cybersecurity</li>
   </ul>
 
 </div>
